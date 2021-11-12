@@ -1,7 +1,7 @@
 import React from "react";
 import {Card} from "react-bootstrap"
-
-const MovieCard = ({ movie }) => {
+import { Link } from "react-router-dom";
+const MovieCard = ({ movie,id }) => {
     return (
         <Card style={{ width: "18rem", marginBottom:"30px" }}>
             <Card.Img variant="top" src={movie.posterUrl} />
@@ -14,6 +14,7 @@ const MovieCard = ({ movie }) => {
                     {movie.rate}
                 </Card.Text>
             </Card.Body>
+            <Link to = {`/movie/${movie.id}`}>trailer</Link>
         </Card>
     );
 };

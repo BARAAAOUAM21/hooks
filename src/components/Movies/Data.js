@@ -1,6 +1,6 @@
 export const Data = [
     {
-        id: Math.random(),
+        id: 1,
         title: "Her",
         rate: 4,
         description:
